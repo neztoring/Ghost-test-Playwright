@@ -24,6 +24,8 @@ const url = 'http://localhost:2368/ghost';
     console.log('Project loaded')
 
 
+    
+
     //Interactuar con la aplicación web
     //...
 

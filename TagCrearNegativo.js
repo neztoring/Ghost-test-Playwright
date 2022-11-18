@@ -20,8 +20,8 @@ const url = 'http://localhost:2368/ghost';
 	await page.screenshot({path: './resultado/1. Inicio.png'});
     
 
-	await page.type('input[name="identification"]', 'n.pereze@uniandes.edu.co');
-    await page.type('input[name="password"]', 'Maleja2016');
+	await page.type('input[name="identification"]', 'a.alvarezh2@uniandes.edu.co');
+    await page.type('input[name="password"]', '12345abcde');
 	
 	console.log('2.Ingresar datos para autenticarse')
 	await page.screenshot({path:'./resultado/2.Datos_autenticarse.png'});

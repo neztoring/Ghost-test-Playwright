@@ -18,7 +18,7 @@ const password = '12345abcde';
     await page.goto(url);
     await new Promise(r => setTimeout(r, 7000));
     console.log('1. Incio');
-	await page.screenshot({path: './resultado/page/crearPageDraft/1. Inicio.png'});
+	await page.screenshot({path: './resultado/page/crearPageDraft/1.Inicio.png'});
     
 
 	await page.type('input[name="identification"]', user);

@@ -20,7 +20,6 @@ const password = '12345abcde';
     console.log('1. Incio');
 	await page.screenshot({path: './resultado/page/crearPage/1. Inicio.png'});
     
-
 	await page.type('input[name="identification"]', user);
     await page.type('input[name="password"]', password);
 	
@@ -32,7 +31,6 @@ const password = '12345abcde';
 	console.log('3. Autenticado con Exito');
     await page.screenshot({path:'./resultado/page/crearPage/3.Autenticacion_exitosa.png'});
 	
-
 	await page.click('text=Pages');
 	console.log('4. Ingresar a opción de menú pages');
 	await new Promise(r => setTimeout(r, 2000));
@@ -42,7 +40,6 @@ const password = '12345abcde';
 	console.log('5. Nueva pagina');
 	await new Promise(r => setTimeout(r, 2000));
 	await page.screenshot({path:'./resultado/page/crearPage/5.Nueva_pagina.png'});
-	
 	
     const tittle =  'New page test'
 	await page.type("textarea[placeholder='Page title']", tittle);
@@ -69,7 +66,6 @@ const password = '12345abcde';
 	console.log('8. Ingresar a la lista de pages');
 	await new Promise(r => setTimeout(r, 2000));
 	await page.screenshot({path:'./resultado/page/crearPage/8.Ingreso_page.png'});
-	
 	
     await page.click("div.gh-contentfilter-menu.gh-contentfilter-type > div.ember-view.ember-basic-dropdown-trigger.ember-power-select-trigger.gh-contentfilter-menu-trigger");
     await page.click(".ember-power-select-options > li:nth-child(3)");

@@ -18,7 +18,7 @@ const password = '12345abcde';
     await page.goto(url);
     await new Promise(r => setTimeout(r, 7000));
     console.log('1. Incio');
-	await page.screenshot({path: './resultado/page/crearPageWithoutAuthor/1. Inicio.png'});
+	await page.screenshot({path: './resultado/page/crearPageWithoutAuthor/1.Inicio.png'});
     
 	await page.type('input[name="identification"]', user);
     await page.type('input[name="password"]', password);
@@ -52,7 +52,7 @@ const password = '12345abcde';
 
     await page.click(".ember-power-select-multiple-remove-btn");
     await new Promise(r => setTimeout(r, 1000));
-
+    await page.screenshot({path:'./resultado/page/crearPageWithoutAuthor/7.author_required.png'});
     console.log(await page.locator('text=At least one author is required.').count()>0)
     
     await browser.close();
